@@ -1,0 +1,76 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom ">CONTACT US</h1>
+    <div class="row text-white mb-5">
+       <p class="mx-auto mb-5 "><b>Please do not hesitate to contact me!</b></p> 
+    </div>
+
+    <div class="col-sm-9 mb-5">
+        <form action="">
+        {% csrf_token %}
+            <div class="form-row">
+
+                <div class="form-group col-md-6 text-white">
+                    <label for="inputName" class="mb-3">Your Name</label>
+                    <input type="text" class="form-control mb-3" id="inputName" placeholder="Your Name">
+                </div>
+
+                <div class="form-group col-md-6 text-white">
+                    <label for="inputEmail" class="mb-3">Your Email *</label>
+                    <input type="text" class="form-control mb-3" id="inputName" placeholder="Your Email" required>
+                </div>
+
+            </div>    
+
+                <div class="form-group text-white">
+                    <label for="inputSubject" class="mb-3">Your Subject</label>
+                    <input type="text" class="form-control mb-3" id="inputSubject" placeholder="Your Subject">
+                </div>
+
+                <div class="mb-3 text-white">
+                    <label for="inputTextarea" class="mb-3">Your Message *</label>
+                    <textarea class="form-control" id="inputTextarea" placeholder="Your Message" required></textarea>
+                </div>
+
+                <div>
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+                
+            
+        </form>
+
+        </div>
+            
+
+            <div class="col-sm-3">
+                <ul class="list-unstyled mt-5">
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-2x i-color"></i>
+                        <p class="text-white">Thane, Mumbai, India</p>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-phone mt-4 fa-2x i-color"></i>
+                        <p class="text-white">+91-7387603773</p>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-envelope mt-4 fa-2x i-color"></i>
+                        <p class="text-white">satendrayadav01567@hotmail.com</p>
+                        
+                    </li>
+                </ul>
+            </div>
+    
+
+</div>
+
+<div class="text-center">
+    <a href="#" target="_blank"> <i class="fab fa-twitter i-color mr-3"></i></a>
+    <a href="https://www.facebook.com/me/" target="facebook"> <i class="fab fa-facebook-f i-color mr-3"></i></a>
+    <a href="#" target="_blank"> <i class="fab fa-instagram i-color mr-3"></i></a>
+    <a href="#" target="_blank"> <i class="fab fa-dribbble i-color"></i></a>
+</div>
+
+{% endblock content %}

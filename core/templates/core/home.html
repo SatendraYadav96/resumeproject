@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5 ">
+    <div class="text-center">
+        <img
+    src="{% static 'core/images/img_0731.jpg' %}"
+    alt="ProfilePic"
+    class="img-thumbnail"
+    width="250px"
+    height="150px"
+  />
+  </div>
+    
+  <div class="text-white mt-5 text-justify mx-5">
+      <h1 class="font-weight-bold st-font" >Respected Sir/Madam ,</h1>
+  </div>
+
+  <div class="text-white mx-5 px-4" style="line-height: 2rem;">
+      <p style="text-indent: 100px;">
+          Lorem ipsum dolor sit amet consectetur, <b class="text-warning">adipisicing elit</b>.
+          Quia debitis harum sint amet distinctio asperiores ipsam tenetur similique quas quidem cum, voluptates temporibus explicabo nam maiores, labore, accusamus magnam ad.
+      </p>
+      <p style="text-indent: 100px;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <b class="text-warning">.Tenetur sed cum corrupti</b>, molestias incidunt aperiam magnam eveniet dignissimos iure facilis itaque illum a quam,
+           facere eum similique! Aut quo enim accusantium nulla dicta illo voluptate optio sapiente reprehenderit non, omnis, aliquid similique nobis aspernatur repellendus pariatur sunt repudiandae cumque? Eaque.
+      </p>
+      <p style="text-indent: 100px;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Eligendi numquam laudantium ut facere modi quidem incidunt quasi eum harum natus.
+      </p>
+  </div>
+
+  <div class="text-center">
+    <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3 ">Hire Me</a>
+    <a href="{% url 'contact'%}" class="btn btn-outline-info my-3 mx-5">Contact</a>
+  </div>
+  
+</div>
+ 
+{% endblock content %}

@@ -9,8 +9,15 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 
 import os
 
+# from waitress import serve
+# serve(wsgiapp, listen='*:8000')
+
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'resumeproject.settings')
 
-application = get_wsgi_application()
+# application = get_wsgi_application()
+
+# If using WhiteNoise:
+from whitenoise import WhiteNoise
+application = WhiteNoise(get_wsgi_application())

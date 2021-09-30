@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from core import views
 
-from django.conf.urls import url
-from django.views,static import serve
+# from django.conf.urls import url
+# from django.views.static import serve
 
 
 urlpatterns = [
@@ -27,7 +27,7 @@ urlpatterns = [
     path('serv/', include('serv.urls')),
     path('edu/', include('edu.urls')),
     path('contact/', views.contact, name="contact"),
-    url(r'^media/?p<path>.*)',serve,{'document_root': setting.MEDIA_ROOT}),
-    url(r'^static/?p<path>.*)',serve,{'document_root': setting.STATIC_ROOT}),
+    # url(r'^media/?p<path>.*)',serve,{'document_root': setting.MEDIA_ROOT}),
+    # url(r'^static/?p<path>.*)',serve,{'document_root': setting.STATIC_ROOT}),
     
 ]

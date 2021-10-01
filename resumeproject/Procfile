@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT resumeproject.wsgi:application
+web gunicorn resumeproject.wsgi:application --log-file -
